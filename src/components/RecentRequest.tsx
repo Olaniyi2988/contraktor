@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, Table, Pagination } from "react-bootstrap";
 import { getRequests } from "../services/requestService";
 import type { Request } from "../types";
@@ -6,8 +6,12 @@ import type { Request } from "../types";
 const ITEMS_PER_PAGE = 5; 
 
 const RecentRequests: React.FC = () => {
-  const requests: Request[] = getRequests();
+  const [requests, setRequests] = useState<Request[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    getRequests().then(setRequests);
+  }, []);
 
   const totalPages = Math.ceil(requests.length / ITEMS_PER_PAGE);
 
@@ -40,7 +44,7 @@ const RecentRequests: React.FC = () => {
             ))}
           </tbody>
         </Table>
-        
+
         {totalPages > 1 && (
           <Pagination className="justify-content-center mt-3">
             <Pagination.Prev

@@ -37,11 +37,11 @@ export function useDashboardStats(): DashboardStats {
   });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const requests: Request[] = getRequests();
+    const timer = setTimeout(async () => {
+      const requests: Promise<Request[]> = getRequests();
       const today = new Date().toDateString();
 
-      const requestsToday = requests.filter(
+      const requestsToday = (await requests).filter(
         (r) => new Date(r.date).toDateString() === today
       ).length;
 

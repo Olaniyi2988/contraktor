@@ -19,17 +19,20 @@ export function useRequestsChartData(): ChartData[] {
   const [data, setData] = useState<ChartData[]>([]);
 
   useEffect(() => {
-    const requests: Request[] = getRequests();
-    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    const counts: Record<string, number> = { Sun:0, Mon:0, Tue:0, Wed:0, Thu:0, Fri:0, Sat:0 };
+    const fetchData = async () => {
+      const requests: Request[] = await getRequests();
+      const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      const counts: Record<string, number> = { Sun:0, Mon:0, Tue:0, Wed:0, Thu:0, Fri:0, Sat:0 };
 
-    requests.forEach((r) => {
-      const day = days[new Date(r.date).getDay()];
-      counts[day] += 1;
-    });
+      requests.forEach((r) => {
+        const day = days[new Date(r.date).getDay()];
+        counts[day] += 1;
+      });
 
-    const chartData: ChartData[] = days.map((day) => ({ day, requests: counts[day] }));
-    setData(chartData);
+      const chartData: ChartData[] = days.map((day) => ({ day, requests: counts[day] }));
+      setData(chartData);
+    };
+    fetchData();
   }, []);
 
   return data;
