@@ -1,4 +1,3 @@
-// src/main.tsx or src/index.tsx
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
@@ -6,7 +5,6 @@ import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-// Safely get root element
 const container = document.getElementById("root");
 
 if (!container) {
@@ -24,5 +22,4 @@ root.render(
   </React.StrictMode>
 );
 
-// Optional performance reporting
 reportWebVitals(console.log);

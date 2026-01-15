@@ -1,4 +1,3 @@
-// src/App.tsx
 import { Routes, Route } from "react-router-dom";
 import DashboardLayout from "./components/DashboardLayout";
 import Dashboard from "./pages/dashboard";
@@ -25,3 +24,4 @@ function App() {
 }
 
 export default App;
+

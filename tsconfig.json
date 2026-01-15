@@ -9,7 +9,10 @@
     "skipLibCheck": true,
     "strict": true,
     "resolveJsonModule": true, 
-    "verbatimModuleSyntax": false   
+    "allowJs": true,
+    "verbatimModuleSyntax": false,
+    "outDir": "./dist",
+    "types": ["jest", "@testing-library/jest-dom"]
   },
   "include": ["src"]
 }
