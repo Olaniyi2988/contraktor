@@ -1,0 +1,207 @@
+
+[
+  {
+    "id": "1",
+    "name": "John the Plumber",
+    "trade": "Plumber",
+    "location": "Lagos",
+    "rating": 4.5,
+    "availability": "Available",
+    "bio": "John has over 12 years of experience in plumbing, handling everything from small household repairs to large commercial projects. He is highly skilled in pipe installations, leak repairs, water heater setups, and bathroom renovations. Known for his reliability and efficiency, John ensures that every project meets high-quality standards and client satisfaction.",
+    "image": "https://randomuser.me/api/portraits/men/11.jpg",
+    "portfolio": [
+      { "title": "Bathroom installation", "image": "https://picsum.photos/400/300?random=1" },
+      { "title": "Pipe repair", "image": "https://picsum.photos/400/300?random=2" },
+      { "title": "Water heater setup", "image": "https://picsum.photos/400/300?random=3" },
+      { "title": "Kitchen plumbing", "image": "https://picsum.photos/400/300?random=4" },
+      { "title": "Pipe replacement", "image": "https://picsum.photos/400/300?random=5" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Sarah Electric",
+    "trade": "Electrician",
+    "location": "Abuja",
+    "rating": 4.2,
+    "availability": "Occupied",
+    "bio": "Sarah specializes in residential and commercial electrical work with a focus on energy efficiency and safety compliance. She has handled complex wiring projects, installed solar energy systems, and ensured smooth electrical operations for multiple clients. Her work is known for precision and adherence to modern safety standards.",
+    "image": "https://randomuser.me/api/portraits/men/12.jpg",
+    "portfolio": [
+      { "title": "Wiring installation", "image": "https://picsum.photos/400/300?random=6" },
+      { "title": "Solar setup", "image": "https://picsum.photos/400/300?random=7" },
+      { "title": "Generator wiring", "image": "https://picsum.photos/400/300?random=8" },
+      { "title": "Lighting solutions", "image": "https://picsum.photos/400/300?random=9" },
+      { "title": "Electrical troubleshooting", "image": "https://picsum.photos/400/300?random=10" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "John Ade Plumbing",
+    "trade": "Plumber",
+    "location": "Lagos",
+    "rating": 4.6,
+    "availability": "Available",
+    "bio": "John Ade has built a reputation for top-notch plumbing services over the last 10 years. From residential pipe repairs to comprehensive bathroom installations, he ensures projects are completed on time and within budget. He is particularly skilled in modern plumbing systems and efficient water heater installations.",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "portfolio": [
+      { "title": "Pipe repairs", "image": "https://picsum.photos/400/300?random=11" },
+      { "title": "Bathroom installations", "image": "https://picsum.photos/400/300?random=12" },
+      { "title": "Water heater setup", "image": "https://picsum.photos/400/300?random=13" },
+      { "title": "Kitchen plumbing", "image": "https://picsum.photos/400/300?random=14" },
+      { "title": "Leak detection", "image": "https://picsum.photos/400/300?random=15" }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Sarah Bright Electric",
+    "trade": "Electrician",
+    "location": "Abuja",
+    "rating": 4.4,
+    "availability": "Busy",
+    "bio": "Sarah Bright is a certified electrician with extensive experience in modern electrical solutions, including solar energy installations and generator setups. She prioritizes safety and efficiency, ensuring every project meets industry standards. Her clients appreciate her proactive approach to problem-solving and her thorough maintenance work.",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "portfolio": [
+      { "title": "House wiring", "image": "https://picsum.photos/400/300?random=16" },
+      { "title": "Solar panels", "image": "https://picsum.photos/400/300?random=17" },
+      { "title": "Generator setup", "image": "https://picsum.photos/400/300?random=18" },
+      { "title": "Lighting installations", "image": "https://picsum.photos/400/300?random=19" },
+      { "title": "Electrical troubleshooting", "image": "https://picsum.photos/400/300?random=20" }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Michael Stone Build",
+    "trade": "Bricklayer",
+    "location": "Ibadan",
+    "rating": 4.2,
+    "availability": "Available",
+    "bio": "Michael Stone has been a professional bricklayer for over a decade, delivering high-quality masonry projects. From fence construction to concrete finishing, he handles every task with precision and durability in mind. His expertise also includes custom stonework and residential building projects.",
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "portfolio": [
+      { "title": "Block molding", "image": "https://picsum.photos/400/300?random=21" },
+      { "title": "Fence construction", "image": "https://picsum.photos/400/300?random=22" },
+      { "title": "Concrete finishing", "image": "https://picsum.photos/400/300?random=23" },
+      { "title": "Custom stonework", "image": "https://picsum.photos/400/300?random=24" },
+      { "title": "Wall construction", "image": "https://picsum.photos/400/300?random=25" }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Grace Paint Studio",
+    "trade": "Painter",
+    "location": "Port Harcourt",
+    "rating": 4.8,
+    "availability": "Occupied",
+    "bio": "Grace is a creative painter with a flair for both interior and exterior projects. She is known for delivering clean, durable finishes and beautiful wall designs. Over the years, she has transformed homes, offices, and commercial spaces with her artistic touch and attention to detail.",
+    "image": "https://randomuser.me/api/portraits/women/4.jpg",
+    "portfolio": [
+      { "title": "Interior painting", "image": "https://picsum.photos/400/300?random=26" },
+      { "title": "Exterior painting", "image": "https://picsum.photos/400/300?random=27" },
+      { "title": "Wall designs", "image": "https://picsum.photos/400/300?random=28" },
+      { "title": "Furniture painting", "image": "https://picsum.photos/400/300?random=29" },
+      { "title": "Decorative murals", "image": "https://picsum.photos/400/300?random=30" }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "David Roof Masters",
+    "trade": "Roofer",
+    "location": "Abeokuta",
+    "rating": 4.3,
+    "availability": "Busy",
+    "bio": "David is a reliable roofing specialist with years of experience installing, repairing, and maintaining roofs. He uses modern techniques and materials to ensure roofs are durable, weather-resistant, and aesthetically pleasing. Safety and quality are always his top priorities.",
+    "image": "https://randomuser.me/api/portraits/men/5.jpg",
+    "portfolio": [
+      { "title": "Roof installation", "image": "https://picsum.photos/400/300?random=31" },
+      { "title": "Leak repairs", "image": "https://picsum.photos/400/300?random=32" },
+      { "title": "Gutter fixing", "image": "https://picsum.photos/400/300?random=33" },
+      { "title": "Roof inspections", "image": "https://picsum.photos/400/300?random=34" },
+      { "title": "Skylight installation", "image": "https://picsum.photos/400/300?random=35" }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Peace Interior Works",
+    "trade": "Carpenter",
+    "location": "Lagos",
+    "rating": 4.7,
+    "availability": "Occupied",
+    "bio": "Peace specializes in custom furniture and interior woodwork. With years of experience, she has transformed homes and offices with elegant cabinets, wardrobes, and decorative wood features. Her attention to detail ensures every piece is both functional and visually appealing.",
+    "image": "https://randomuser.me/api/portraits/women/6.jpg",
+    "portfolio": [
+      { "title": "Kitchen cabinets", "image": "https://picsum.photos/400/300?random=36" },
+      { "title": "Wardrobes", "image": "https://picsum.photos/400/300?random=37" },
+      { "title": "Office desks", "image": "https://picsum.photos/400/300?random=38" },
+      { "title": "Custom shelving", "image": "https://picsum.photos/400/300?random=39" },
+      { "title": "Wooden decor pieces", "image": "https://picsum.photos/400/300?random=40" }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Samuel CoolTech",
+    "trade": "AC Technician",
+    "location": "Ilorin",
+    "rating": 4.5,
+    "availability": "Available",
+    "bio": "Samuel is an HVAC specialist skilled in installation, servicing, and maintenance of air conditioning units. Known for his quick response times and high-quality service, he ensures that clients' systems run efficiently. He also offers advice on energy-saving techniques and proper system upkeep.",
+    "image": "https://randomuser.me/api/portraits/men/7.jpg",
+    "portfolio": [
+      { "title": "AC installation", "image": "https://picsum.photos/400/300?random=41" },
+      { "title": "AC servicing", "image": "https://picsum.photos/400/300?random=42" },
+      { "title": "Gas refill", "image": "https://picsum.photos/400/300?random=43" },
+      { "title": "Filter replacement", "image": "https://picsum.photos/400/300?random=44" },
+      { "title": "System diagnostics", "image": "https://picsum.photos/400/300?random=45" }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Blessing TilePro",
+    "trade": "Tiler",
+    "location": "Awka",
+    "rating": 4.1,
+    "availability": "Busy",
+    "bio": "Blessing specializes in precision tiling for floors, walls, and bathrooms. She has years of experience creating beautiful and durable tiled surfaces. Her work ranges from residential kitchens to commercial office spaces, ensuring that every tile is perfectly aligned and finished to the highest standards.",
+    "image": "https://randomuser.me/api/portraits/women/8.jpg",
+    "portfolio": [
+      { "title": "Floor tiling", "image": "https://picsum.photos/400/300?random=46" },
+      { "title": "Bathroom tiling", "image": "https://picsum.photos/400/300?random=47" },
+      { "title": "Kitchen backsplash", "image": "https://picsum.photos/400/300?random=48" },
+      { "title": "Outdoor tiling", "image": "https://picsum.photos/400/300?random=49" },
+      { "title": "Custom mosaic", "image": "https://picsum.photos/400/300?random=50" }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Ibrahim WeldWorks",
+    "trade": "Welder",
+    "location": "Kano",
+    "rating": 4.4,
+    "availability": "Occupied",
+    "bio": "Ibrahim is a skilled metal fabricator with extensive experience in welding gates, doors, and custom metal structures. He combines precision with durability, ensuring that every piece meets both functional and aesthetic standards. His work is highly sought after for both residential and commercial projects.",
+    "image": "https://randomuser.me/api/portraits/men/9.jpg",
+    "portfolio": [
+      { "title": "Gate fabrication", "image": "https://picsum.photos/400/300?random=51" },
+      { "title": "Metal doors", "image": "https://picsum.photos/400/300?random=52" },
+      { "title": "Window protectors", "image": "https://picsum.photos/400/300?random=53" },
+      { "title": "Steel railings", "image": "https://picsum.photos/400/300?random=54" },
+      { "title": "Custom metal structures", "image": "https://picsum.photos/400/300?random=55" }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Ngozi Decor Hub",
+    "trade": "Interior Decorator",
+    "location": "Owerri",
+    "rating": 4.9,
+    "availability": "Occupied",
+    "bio": "Ngozi is a luxury interior decorator specializing in modern aesthetics and functional designs. She transforms living and working spaces into visually stunning environments while maintaining practicality. Her expertise covers everything from bedrooms and living rooms to office interiors and event spaces, with a keen eye for color schemes, textures, and furniture placement.",
+    "image": "https://randomuser.me/api/portraits/women/10.jpg",
+    "portfolio": [
+      { "title": "Living room decor", "image": "https://picsum.photos/400/300?random=56" },
+      { "title": "Bedroom styling", "image": "https://picsum.photos/400/300?random=57" },
+      { "title": "Office interiors", "image": "https://picsum.photos/400/300?random=58" },
+      { "title": "Event space decoration", "image": "https://picsum.photos/400/300?random=59" },
+      { "title": "Luxury furnishings", "image": "https://picsum.photos/400/300?random=60" }
+    ]
+  }
+]

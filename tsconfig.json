@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",       
+    "moduleResolution": "node",
+    "jsx": "react-jsx",             
+    "esModuleInterop": true,        
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "resolveJsonModule": true, 
+    "verbatimModuleSyntax": false   
+  },
+  "include": ["src"]
+}
