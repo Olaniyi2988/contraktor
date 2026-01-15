@@ -1,72 +1,157 @@
-# Getting Started with Create React App
+# Contraktor – Artisan Marketplace UI + Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**A responsive web application to explore artisans, view profiles, request services, and monitor admin insights.**
 
-## Available Scripts
+Built with **React**, **TypeScript**, and **Bootstrap**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📦 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Screens**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Explore Artisans**
 
-### `npm test`
+   * List view of artisans with **search** and **filters** (trade, location, rating, availability).
+   * Pagination for large lists.
+   * Debounced search to optimize performance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Artisan Profile**
 
-### `npm run build`
+   * Displays artisan details, availability, and portfolio.
+   * Includes **Request Service** form with validation, feedback, and disabled state during submission.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Admin Dashboard**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   * Shows analytics with charts (e.g., requests per day).
+   * Dashboard cards display key stats like total artisans, requests today, and average rating.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### **Functional Requirements Implemented**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Debounced search and filtering.
+* Persisted last used filters in **localStorage**.
+* Form validation with friendly error messages.
+* Routing between pages using **React Router**.
+* Loading, empty, and success/error states for data interactions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **State Management**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* **Local state:** `useState` for form inputs, search query, and pagination.
+* **Shared state:** Custom hooks (`useDashboardStats`, `useRequestsChartData`) manage global-like data for dashboards.
+* **Justification:** For this small-to-medium scale project, **React hooks and custom hooks** provide simple, maintainable, and performant state management without the overhead of Redux/Zustand.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **Frontend:** React 19
+* **Styling/UI:** Bootstrap 5 + custom CSS
+* **Routing:** React Router v6
+* **Charts:** Recharts
+* **Data:** Mocked JSON files (`artisans.json`, `requests.json`)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔧 Setup & Run
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/Olaniyi2988/contraktor.git
+cd contraktor
+```
 
-### Making a Progressive Web App
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+3. Run the application locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm run dev
+```
 
-### Deployment
+4. Open [http://localhost:3000](http://localhost:3000) to view in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🗂️ Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# contraktor" 
-"# contraktor" 
+```
+src/
+│
+├─ components/       # Reusable components (cards, modals, tables, forms)
+├─ hooks/            # Custom hooks for state and logic
+├─ pages/            # Page-level components (Dashboard, ExplorePage, ProfilePage)
+├─ services/         # Mock API service layer
+├─ data/             # Static JSON data for artisans and requests
+├─ utils/            # Helper functions (debounce, filter)
+├─ types/            # Shared TypeScript types
+├─ assets/           # CSS and images
+└─ App.tsx           # App root and routing
+```
+
+---
+
+## 🗄️ Mock API / Data
+
+* **Artisans:** `src/data/artisans.json`
+* **Requests:** `src/data/requests.json`
+* Simulated API calls via service layer (`services/artisanService.ts`, `services/requestService.ts`)
+* Methods:
+
+  * `getAllArtisans()`
+  * `getArtisanById(id)`
+  * `getRequests()`
+  * `addRequest(request)`
+
+All requests use **localStorage** to persist new service requests.
+
+---
+
+## ⚙️ Key Decisions & Tradeoffs
+
+* **State management:** Chose **hooks + custom hooks** for simplicity and maintainability. Redux or Zustand would be overkill for this project scale.
+* **Mock data:** Used **static JSON + localStorage** for simplicity. Could swap for JSON Server or MSW in future.
+* **Debounce search:** Improves performance and prevents unnecessary re-renders.
+* **Responsive design:** Bootstrap grid and components used for fast layout and mobile-friendly UI.
+* **Charts:** **Recharts** provides a lightweight way to visualize requests per day.
+
+---
+
+## 🧪 Testing
+
+* Lightweight **unit test** included for `filterArtisans` utility: ensures search functionality returns correct results.
+* Run tests:
+
+```bash
+npm test
+```
+
+---
+
+## ✅ Accessibility & UX
+
+* All forms have proper labels.
+* Buttons are accessible via keyboard.
+* Visual feedback for loading, success, and empty states.
+* Portfolio images have `alt` text for screen readers.
+
+---
+
+## 📌 Live Demo (Optional)
+
+https://contraktor-z9w4.vercel.app/
+
+---
+
+## 📝 Notes
+
+* The app is **fully functional** using only mock data.
+* All key interactions (search, pagination, requests) are preserved between page reloads via **localStorage**.

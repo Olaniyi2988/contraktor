@@ -1,12 +1,5 @@
-// src/hooks/useLocalStorage.ts
 import { useState } from "react";
 
-/**
- * A generic hook to store and retrieve values from localStorage
- * @param key string - localStorage key
- * @param initialValue T - initial value for the state
- * @returns [storedValue, setValue]
- */
 export function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T | ((prev: T) => T)) => void] {
   const [storedValue, setStoredValue] = useState<T>(() => {
     try {

@@ -3,7 +3,7 @@ import { Card, Table, Pagination } from "react-bootstrap";
 import { getRequests } from "../services/requestService";
 import type { Request } from "../types";
 
-const ITEMS_PER_PAGE = 5; // number of requests per page
+const ITEMS_PER_PAGE = 5; 
 
 const RecentRequests: React.FC = () => {
   const requests: Request[] = getRequests();
@@ -40,8 +40,7 @@ const RecentRequests: React.FC = () => {
             ))}
           </tbody>
         </Table>
-
-        {/* Pagination */}
+        
         {totalPages > 1 && (
           <Pagination className="justify-content-center mt-3">
             <Pagination.Prev

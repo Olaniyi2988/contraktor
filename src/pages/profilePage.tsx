@@ -1,14 +1,13 @@
-// src/pages/ProfilePage.tsx
 import { useParams } from "react-router-dom";
 import data from "../data/artisans.json";
 import { useEffect, useState } from "react";
 import RequestForm from "../components/RequestForm";
 import { Card, Container, Spinner } from "react-bootstrap";
-import "../assets/profile-page.css";
+import "../assets/styles/profile-page.css";
 import type { Artisan } from "../types";
 
 export default function ProfilePage() {
-  const { id } = useParams<{ id: string }>(); // TS knows id is a string
+  const { id } = useParams<{ id: string }>(); 
   const artisan: Artisan | undefined = data.find(
     (a) => a.id.toString() === id
   );
@@ -79,7 +78,6 @@ export default function ProfilePage() {
       <Card className="mb-4 shadow-sm">
         <Card.Body>
           <Card.Title>Request Service</Card.Title>
-          {/* Pass the full artisan object for type safety */}
           <RequestForm artisan={artisan} />
         </Card.Body>
       </Card>

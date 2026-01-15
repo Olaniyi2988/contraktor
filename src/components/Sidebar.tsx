@@ -1,4 +1,3 @@
-// src/components/Sidebar.tsx
 import { Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import { FaTachometerAlt, FaUser } from "react-icons/fa";
@@ -21,10 +20,6 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed }) => {
   const links: LinkItem[] = [
     { name: "Dashboard", icon: <FaTachometerAlt />, path: "/" },
     { name: "Artisans", icon: <FaUser />, path: "/artisans" },
-    // Uncomment for future features:
-    // { name: "Requests", icon: <FaClipboardList />, path: "/requests" },
-    // { name: "Analytics", icon: <FaChartLine />, path: "/analytics" },
-    // { name: "Settings", icon: <FaCog />, path: "/settings" },
   ];
 
   return (

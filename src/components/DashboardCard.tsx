@@ -1,4 +1,3 @@
-// src/components/DashboardCards.tsx
 import type { ReactNode } from "react";
 import { Card, Row, Col, Spinner } from "react-bootstrap";
 import { FaUsers, FaClipboardList, FaStar } from "react-icons/fa";
@@ -7,7 +6,6 @@ import { useDashboardStats } from "../hooks/useDashboardStats";
 const DashboardCards: React.FC = () => {
   const { requestsToday, totalArtisans, avgRating } = useDashboardStats();
 
-  // Render value or spinner if null/undefined
   const renderValue = (value: number | string | null | undefined): ReactNode =>
     value === null || value === undefined ? (
       <Spinner animation="border" size="sm" />

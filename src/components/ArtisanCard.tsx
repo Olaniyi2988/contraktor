@@ -1,16 +1,14 @@
 // src/components/ArtisanCard.tsx
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import '../assets/artisan-card.css';
+import '../assets/styles/artisan-card.css';
 import type { Artisan } from "../types";
 
 
-// 2️⃣ Define the props type
 interface ArtisanCardProps {
   artisan: Artisan;
 }
 
-// 3️⃣ Use props typing
 const ArtisanCard: React.FC<ArtisanCardProps> = ({ artisan }) => {
   const navigate = useNavigate();
 

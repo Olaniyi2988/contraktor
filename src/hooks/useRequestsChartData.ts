@@ -1,8 +1,6 @@
-// src/hooks/useRequestsChartData.ts
 import { useState, useEffect } from "react";
 import { getRequests } from "../services/requestService";
 
-// Define the Request type (should match your local storage / service)
 interface Request {
   id: number | string;
   artisanId: number | string;
@@ -12,7 +10,6 @@ interface Request {
   date: string;
 }
 
-// Type for chart data
 interface ChartData {
   day: string;
   requests: number;

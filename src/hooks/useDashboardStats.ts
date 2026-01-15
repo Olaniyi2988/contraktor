@@ -1,9 +1,7 @@
-// src/hooks/useDashboardStats.ts
 import { useState, useEffect } from "react";
 import { getRequests } from "../services/requestService";
 import { getAllArtisans } from "../services/artisanService";
 
-// 1️⃣ Define types for request and artisan (assuming JSON structure)
 interface Request {
   id: number | string;
   artisanId: number | string;
@@ -25,7 +23,6 @@ interface Artisan {
   portfolio?: { image: string; title: string }[];
 }
 
-// 2️⃣ Define type for stats state
 interface DashboardStats {
   requestsToday: number | null;
   totalArtisans: number | null;

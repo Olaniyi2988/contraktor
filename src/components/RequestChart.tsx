@@ -1,4 +1,3 @@
-// src/components/RequestsChart.js
 import { Card } from "react-bootstrap";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
 import { useRequestsChartData } from "../hooks/useRequestsChartData";

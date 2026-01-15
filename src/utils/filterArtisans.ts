@@ -1,4 +1,3 @@
-// src/utils/filterArtisans.ts
 import type { Artisan } from "../types";
 
 export function filterArtisans(artisans: Artisan[], search: string): Artisan[] {
