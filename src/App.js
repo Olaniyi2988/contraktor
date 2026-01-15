@@ -9,7 +9,20 @@ import { initRequestStorage } from "./services/requestService";
 
 function App() {
   useEffect(() => {
-    initRequestStorage();
+    async function init() {
+      const existing = localStorage.getItem("artisanRequest");
+
+      // Initialize storage if empty
+      await initRequestStorage();
+
+      // Reload page only if storage was just seeded
+      if (!existing && !sessionStorage.getItem("pageReloaded")) {
+        sessionStorage.setItem("pageReloaded", "true");
+        window.location.reload();
+      }
+    }
+
+    init();
   }, []);
 
   return (

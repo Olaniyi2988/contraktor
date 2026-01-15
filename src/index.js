@@ -11,7 +11,6 @@ if (!container) {
   throw new Error("Root container missing in index.html");
 }
 
-// Create root
 const root = ReactDOM.createRoot(container);
 
 root.render(
