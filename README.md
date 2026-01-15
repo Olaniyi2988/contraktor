@@ -145,7 +145,7 @@ npm test
 
 ---
 
-## 📌 Live Demo (Optional)
+## 📌 Deployment Link
 
 https://contraktor-z9w4.vercel.app/
 
